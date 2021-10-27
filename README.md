@@ -6,7 +6,7 @@ Had this challenge for a job interview.
 
 Algorithm does a single pass breaking on ngram length and using built in js functions which are pretty optimized already.
 
-While I could've used a Tree based approach I used a stack based solution using indexes.
+While I could've used a Tree based approach I opted a stack based solution using indexes.
 
 During my tests this was much more performant but more benchmarking should be done. I assume it has to do with CPU cache being used much more effectively.
 
@@ -25,8 +25,8 @@ Two options:
 
 (Recommended)
 ```
-$ git clone
-$ cd
+$ git clone https://github.com/UnGaucho/ngram-challenge
+$ cd ngram-challenge
 $ npm install
 $ jest
 ```
