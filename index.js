@@ -27,9 +27,9 @@ function ngram(str, len) {
 
     const tokens = str.split(' ');
 
-    if (len == undefined) { // If function wasn't passed an n-gram length argument it defaults to max permutations
+    if (len == undefined) {
         len = tokens.length;
-    } else if (!len) { // If it's 0 length do early return with empty results
+    } else if (!len) {
         return [];
     }
 
@@ -38,12 +38,8 @@ function ngram(str, len) {
     for (let start = 0; start < tokens.length; start++) {
         arr.push([]);
 
-        for (let end = start; end < tokens.length; end++) {
-          if ( end + 1 - start > len) {
-            break;
-          }
-          arr[start].push(tokens.slice(start, end + 1).join(' '));
-
+        for (let end = start; end < tokens.length && end - start < len; end++) {
+            arr[start].push(tokens.slice(start, end + 1).join(' '));
         }
     }
 
@@ -51,9 +47,9 @@ function ngram(str, len) {
 }
 
 if (typeof require !== 'undefined' && require.main === module) {
-    length = process.argv[2]
+    length = parseInt(process.argv[2],10)
     args = process.argv.slice(3).join(' ');
-    console.log(ngram(args))
+    console.log(ngram(args, length))
 }
 
 module.exports = ngram`)
