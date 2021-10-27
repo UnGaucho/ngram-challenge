@@ -1,6 +1,6 @@
-#Coding challenge n-gram
+# Coding challenge n-gram
 
-### Intro
+## Intro
 
 Had this challenge for a job interview. 
 

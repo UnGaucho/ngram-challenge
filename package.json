@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://gist.github.com/63e2090c73eb2cce5ac3fec5322c99be.git"
+    "url": "git+https://github.com/UnGaucho/ngram-challenge.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://gist.github.com/63e2090c73eb2cce5ac3fec5322c99be"
+    "url": "https://github.com/UnGaucho/ngram-challenge"
   },
-  "homepage": "https://gist.github.com/63e2090c73eb2cce5ac3fec5322c99be",
+  "homepage": "https://github.com/UnGaucho/ngram-challenge",
   "dependencies": {
     "jest": "^27.3.1"
   }
