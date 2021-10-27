@@ -10,7 +10,7 @@ While I could've used a Tree based approach I used a stack based solution using 
 
 During my tests this was much more performant but more benchmarking should be done. I assume it has to do with CPU cache being used much more effectively.
 
-Finally it was specifically they wanted a single file private gist with short installation instructions. This is all at `index.js` and the reason this project has a minimal package.json
+Finally it was specifically asked for a single file private gist with short installation instructions. This is all at `index.js` and the reason this project has a minimal package.json and no .gitignore
 
 Project is dependency free (except for Jest required to run the tests)
 ### Install on GNU/Linux
